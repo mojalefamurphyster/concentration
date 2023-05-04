@@ -1,0 +1,65 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+h1 {
+  font-family: "Fredoka One", cursive;
+  font-size: 48px;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+h1,
+h2 {
+  color: #f2c078;
+}
+h3 {
+  color: #fe5d26;
+  font-family: "Pacifico", cursive;
+  font-size: 36px;
+  text-align: center;
+}
+.Concentration {
+  background-color: #0e1c36;
+  border-radius: 16px;
+  height: 100%;
+  padding: 32px;
+}
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.MemoryCard {
+  align-items: center;
+  background-color: #afcbff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  margin: 4px;
+  width: 120px;
+  padding: 4px;
+  transition: all 200ms;
+}
+.MemoryCard.revealed {
+  background-color: #70b77e;
+}
+.MemoryCard.removed {
+  opacity: 0;
+}
+.material-icons.large-icon {
+  font-size: 64px;
+  opacity: 0;
+  transition: all 200ms;
+}
+.material-icons.large-icon.revealed {
+  opacity: 100%;
+}
